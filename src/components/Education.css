@@ -1,0 +1,107 @@
+.education {
+    padding: var(--section-padding);
+}
+
+.education__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 2rem;
+}
+
+.education__degrees {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    transition: var(--transition-medium);
+}
+
+.education__card:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.education__icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.education__degree {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.education__school {
+    color: var(--accent-purple);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.education__period {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.education__cert-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.education__cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.education__cert {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 18px 22px;
+    transition: var(--transition-medium);
+}
+
+.education__cert:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.education__cert-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.education__cert-name {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .education__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

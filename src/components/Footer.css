@@ -1,0 +1,28 @@
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer__content {
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.footer__text strong {
+    color: var(--text-primary);
+}
+
+.footer__code {
+    font-family: var(--font-code);
+    color: var(--accent-cyan);
+}
+
+.footer__copyright {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}

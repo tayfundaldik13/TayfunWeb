@@ -1,0 +1,126 @@
+.experience {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+}
+
+.experience__timeline {
+    position: relative;
+    padding-left: 40px;
+    max-width: 800px;
+}
+
+.experience__timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-cyan);
+}
+
+.experience__item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.experience__item:last-child {
+    margin-bottom: 0;
+}
+
+.experience__dot {
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    border: 3px solid var(--accent-cyan);
+    z-index: 1;
+    transition: var(--transition-fast);
+}
+
+.experience__item:hover .experience__dot {
+    background: var(--accent-cyan);
+}
+
+.experience__card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    transition: var(--transition-medium);
+}
+
+.experience__card:hover {
+    border-color: rgba(145, 198, 188, 0.15);
+    transform: translateX(4px);
+}
+
+.experience__period {
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    font-weight: 500;
+}
+
+.experience__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 8px;
+    color: var(--text-primary);
+}
+
+.experience__company {
+    font-size: 1rem;
+    color: var(--accent-purple);
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.experience__location {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.experience__description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 12px;
+    line-height: 1.7;
+}
+
+.experience__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.experience__tag {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(145, 198, 188, 0.08);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(145, 198, 188, 0.15);
+}
+
+@media (max-width: 768px) {
+    .experience__timeline {
+        padding-left: 30px;
+    }
+
+    .experience__dot {
+        left: -30px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .experience__card {
+        padding: 20px;
+    }
+}
