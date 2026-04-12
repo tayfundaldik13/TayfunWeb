@@ -204,7 +204,7 @@ export const ui = {
         title: { en: "Contact", tr: "İletişim" },
         subtitle: {
             en: "Let's connect! Whether it's a project idea or just a hello.",
-            tr: "İletişime geçelim! Bir proje fikri ya da sadece merhaba demek için.",
+            tr: "Bir proje fikri veya merhaba demek için bana ulaşabilirsiniz.",
         },
         name: { en: "Name", tr: "İsim" },
         namePh: { en: "Your name", tr: "Adınız" },
