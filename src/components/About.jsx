@@ -16,7 +16,7 @@ export default function About() {
                 <div className="about__grid">
                     <div className="about__photo-wrapper scroll-hidden">
                         <div className="about__photo-frame">
-                            <img src="/profile.jpg" alt="Tayfun Daldık" className="about__photo" />
+                            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Tayfun Daldık" className="about__photo" />
                         </div>
                     </div>
                     <div className="about__content">
